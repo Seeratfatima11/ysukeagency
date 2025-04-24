@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Suez+One&display=swap");
+body {
+  font-family: "Jost", sans-serif;
+  background: #fafaff;
+}
 .hero-section {
   background: #fafaff;
+  padding: 150px 0px 0px;
 }
 .login-section h1 {
   color: #fe5fa1;
-  font-family: Jost;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -11,4 +16,88 @@
   margin-bottom: 0px;
   padding-bottom: 40px;
   text-align: center;
+}
+.login-form {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.04);
+  padding: 40px;
+}
+.login-form label {
+  color: #05021d;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 4px;
+  margin-bottom: 0px;
+}
+.login-form .input-sec {
+  border-radius: 20px;
+  border: 1px solid rgba(5, 2, 29, 0.12);
+  background: #fff;
+  padding: 10px 20px;
+  margin-bottom: 8px;
+}
+.login-form .input-sec::placeholder {
+  color: rgba(5, 2, 29, 0.12);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.login-form .field-icon {
+  float: right;
+  margin-right: 14px;
+  margin-top: -37px;
+  position: relative;
+  z-index: 2;
+  color: #05021d;
+}
+.login-form .pass-sec::placeholder {
+  color: #05021d;
+}
+.login-form .form-check-label {
+  color: rgba(5, 2, 29, 0.2);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+  padding-left: 4px;
+}
+.login-form .form-check-input {
+  border-radius: 2px;
+  border: 1px solid rgba(5, 2, 29, 0.2);
+  width: 12px;
+  height: 12px;
+}
+.login-form .forget-sec {
+  color: #fe5fa1;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  padding-top: 5px;
+}
+.login-form .login-btn {
+  border-radius: 20px;
+  background: #fe5fa1;
+  padding: 8px 60px;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  .login-section h1 {
+    font-size: 20px;
+  }
+  .login-form .login-btn {
+    width: 100%;
+  }
 }

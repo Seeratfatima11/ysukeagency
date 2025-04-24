@@ -1,0 +1,14 @@
+.hero-section {
+  background: #fafaff;
+}
+.login-section h1 {
+  color: #fe5fa1;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 0px;
+  padding-bottom: 40px;
+  text-align: center;
+}

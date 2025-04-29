@@ -313,7 +313,7 @@ body {
   height: 100px;
   display: flex;
   align-items: center;
-  padding: 0px 40px;
+  padding: 0px 40px 0px 0px;
 }
 
 .home-section .home-content .bx-menu,

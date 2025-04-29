@@ -932,6 +932,9 @@ label.input-style.input-label.lh-1-7.p-3.text-center.cursor-pointer {
   }
 }
 @media (max-width: 600px) {
+  .msg-content-sec {
+    padding: 16px;
+  }
   .acpt-btn {
     padding-top: 0px !important;
   }

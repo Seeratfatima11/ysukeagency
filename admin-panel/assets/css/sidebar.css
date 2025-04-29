@@ -119,6 +119,7 @@ body {
   display: flex;
   align-items: center;
   margin-right: 12px;
+  margin-top: 5px;
 }
 .sidebar .nav-links li.active i,
 .sidebar .nav-links li:hover i {

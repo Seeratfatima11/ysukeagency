@@ -87,12 +87,12 @@
       <div class="bottom-links">
         <ul class="nav-links">
           <li>
-            <a href="account-setting.html">
+            <a href="settings.html">
               <i class="bx bx-cog icon" title="Setting"></i>
               <span class="link_name">Setting</span>
             </a>
           </li>
-          <li>
+          <li data-bs-toggle="modal" data-bs-target="#logoutmodal">
             <a href="#">
               <i class="bx bx-log-out icon" title="Logout"></i>
               <span class="link_name">Logout</span>
@@ -113,9 +113,11 @@
             </div>
             <div class="col-md-4" style="padding: 0px 12px">
               <div class="nav-profile">
-                <i class="bx bx-envelope"></i>
-                <img src="assets/img/profile-img.png" alt="" />
-                <h1>Sebastian</h1>
+                <a href="messages.html"><i class="bx bx-envelope"></i></a>
+                <a href="viewapplication.html" class="d-flex">
+                  <img src="assets/img/profile-img.png" alt="" />
+                  <h1>Sebastian</h1>
+                </a>
               </div>
             </div>
           </div>
@@ -294,6 +296,37 @@
       crossorigin="anonymous"
     ></script>
     <!-- custom js -->
-    <script src="assets/js/script.js"></script>   
+    <script src="assets/js/script.js"></script> 
+    
+     <!-- logout modal -->
+     <div
+     class="modal fade"
+     id="logoutmodal"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog">
+       <div class="modal-content msg-content-sec">
+         <div class="modal-body p-0">
+           <h2>Are you sure you want to logout?</h2>
+           <div class="row">
+             <div class="col-md-12 logout-btns-sec">
+               <div class="modal-btns-sec">
+                 <button
+                   class="btn reply-btn"
+                   data-bs-dismiss="modal"
+                   aria-label="Close"
+                 >
+                   No, Cancel
+                 </button>
+                 <button class="btn read-btn">Yes, Sure</button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
   </body>
 </html>

@@ -743,6 +743,9 @@ label.input-style.input-label.lh-1-7.p-3.text-center.cursor-pointer {
 .pagination-sec .page-item:not(:first-child) .page-link {
   margin-left: 0px;
 }
+.nav-profile a {
+  text-decoration: none;
+}
 .faq-sec {
   border-radius: 8px;
   border: 1px solid #05021d;
@@ -982,6 +985,9 @@ label.input-style.input-label.lh-1-7.p-3.text-center.cursor-pointer {
   .modal-btns-sec {
     float: none;
   }
+  .nav-profile i {
+    margin-top: 0px !important;
+  }
 }
 @media (max-width: 320px) {
   .chart-section {
@@ -1004,5 +1010,8 @@ label.input-style.input-label.lh-1-7.p-3.text-center.cursor-pointer {
   }
   .upd-btn {
     padding: 8px 16px !important;
+  }
+  .dash-notification .breadcrumb-item {
+    font-size: 12px;
   }
 }

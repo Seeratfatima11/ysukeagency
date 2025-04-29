@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owl Carousel Example</title>
+  <!-- Include the Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+  .carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-family: Arial;
+}
+
+.carousel__list {
+  display: flex;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  perspective: 300px;
+}
+
+.carousel__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0px;
+  width: 150px;
+  height: 250px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+  position: absolute;
+  transition: all .3s ease-in;
+}
+.carousel__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or 'contain' if you prefer */
+  border-radius: 12px; /* match the card's rounded corners */
+}
+.carousel__item[data-pos="0"] {
+  z-index: 5;
+}
+
+.carousel__item[data-pos="-1"],
+.carousel__item[data-pos="1"] {
+  opacity: 0.7;
+  filter: blur(1px) grayscale(10%);
+}
+
+.carousel__item[data-pos="-1"] {
+  transform: translateX(-50%) scale(0.8);  /* Move left and shrink */
+  z-index: 4;  /* Behind the active one */
+}
+
+.carousel__item[data-pos="1"] {
+  transform: translateX(50%) scale(0.8);  /* Move right and shrink */
+  z-index: 4;  /* Behind the active one */
+}
+
+.carousel__item[data-pos="-2"],
+.carousel__item[data-pos="2"] {
+  opacity: 0.4;
+  filter: blur(3px) grayscale(20%);
+}
+
+.carousel__item[data-pos="-2"] {
+  transform: translateX(-100%) scale(0.7);  /* Move further left and shrink */
+  z-index: 3;  /* Behind the others */
+}
+
+.carousel__item[data-pos="2"] {
+  transform: translateX(100%) scale(0.7);  /* Move further right and shrink */
+  z-index: 3;  /* Behind the others */
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Owl Carousel Container -->
+  <!-- TESTIMONIALS -->
+  <div class="carousel">
+    <ul class="carousel__list">
+      <li class="carousel__item" data-pos="-2">
+        <img src="assets/img/G-1.png" alt="">
+      </li>
+      <li class="carousel__item" data-pos="-1">
+        <img src="assets/img/G-2.png" alt="">
+      </li>
+      <li class="carousel__item" data-pos="0">
+        <img src="assets/img/G1.png" alt="">
+      </li>
+      <li class="carousel__item" data-pos="1">
+        <img src="assets/img/G2.png" alt="">
+      </li>
+      <li class="carousel__item" data-pos="2">
+        <img src="assets/img/G3.png" alt="">
+      </li>
+    </ul>
+    
+  </div>
+    <!-- END OF TESTIMONIALS -->
+
+  <!-- Include jQuery and Owl Carousel JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+  const state = {};
+const carouselList = document.querySelector('.carousel__list');
+const carouselItems = document.querySelectorAll('.carousel__item');
+const elems = Array.from(carouselItems);
+
+carouselList.addEventListener('click', function (event) {
+  var isItem = event.target.closest('.carousel__item');
+
+  if (!isItem || isItem.classList.contains('carousel__item_active')) {
+    return;
+  }
+
+  update(isItem);
+});
+
+const update = function(newActive) {
+  const newActivePos = newActive.dataset.pos;
+
+  const current = elems.find((elem) => elem.dataset.pos == 0);
+  const prev = elems.find((elem) => elem.dataset.pos == -1);
+  const next = elems.find((elem) => elem.dataset.pos == 1);
+  const first = elems.find((elem) => elem.dataset.pos == -2);
+  const last = elems.find((elem) => elem.dataset.pos == 2);
+
+  current.classList.remove('carousel__item_active');
+
+  [current, prev, next, first, last].forEach(item => {
+    var itemPos = parseInt(item.dataset.pos);
+    item.dataset.pos = getPos(itemPos, parseInt(newActivePos));
+  });
+};
+
+const getPos = function (current, active) {
+  const diff = current - active;
+
+  if (Math.abs(current - active) > 2) {
+    return -current;
+  }
+
+  return diff;
+};
+
+  </script>
+
+</body>
+</html>

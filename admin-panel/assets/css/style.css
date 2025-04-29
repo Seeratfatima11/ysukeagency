@@ -713,6 +713,9 @@ label.input-style.input-label.lh-1-7.p-3.text-center.cursor-pointer {
   justify-content: space-between;
   align-items: center;
 }
+.change-pass {
+  cursor: pointer;
+}
 .icon-sec i {
   color: #fe5fa1 !important;
 }

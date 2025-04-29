@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <!-- file upload link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/55bd3bbc70.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <title>Yasuke Agency</title>
+  </head>
+  <style>
+    .button {
+      color: #000 !important;
+    }
+  </style>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="">
+          <img src="assets/img/Dream-crowd-Logo.png" />
+        </i>
+        <span class="logo_name">DREAMCROWD</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard.html">
+            <i class="bx bx-stats" title="Statistics"></i>
+            <span class="link_name">Statistics</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </li>
+        <li class="active showMenu">
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-cog icon" title="Customize Site"></i>
+              <span class="link_name">Customize Site</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Customize Site</a></li>
+            <li>
+              <a href="siteidentity.html">Site Identity</a>
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a class="button" href="aboutus.html">About us</a></li>
+            <li><a href="faqs.html">FAQ’s</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href="apply-now-form.html">Apply Now Form</a></li>
+            <li><a href="thankyou.html">Thank You</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="requests.html">
+              <i class="bx bx-laptop" title="Requests"></i>
+              <span class="link_name">Requests</span>
+            </a>
+          </div>
+        </li>
+        <!-- <li> -->
+        <li>
+          <a href="messages.html">
+            <i class="bx bxs-message-dots" title="Messages"></i>
+            <span class="link_name">Messages</span>
+          </a>
+        </li>
+      </ul>
+      <div class="bottom-links">
+        <ul class="nav-links">
+          <li>
+            <a href="settings.html">
+              <i class="bx bx-cog icon" title="Setting"></i>
+              <span class="link_name">Setting</span>
+            </a>
+          </li>
+          <li data-bs-toggle="modal" data-bs-target="#logoutmodal">
+            <a href="#">
+              <i class="bx bx-log-out icon" title="Logout"></i>
+              <span class="link_name">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="home-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="home-content fixed-top">
+            <div class="col-md-8" style="padding: 0px 12px; display: flex">
+              <i class="bx bx-menu"></i>
+              <i class="nav-dash-logo">
+                <img src="assets/img/logo.png" />
+              </i>
+            </div>
+            <div class="col-md-4" style="padding: 0px 12px">
+              <div class="nav-profile">
+                <i class="bx bx-envelope"></i>
+                <img src="assets/img/profile-img.png" alt="" />
+                <h1>Sebastian</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============================== MAIN CONTENT START HERE =========================== -->
+      <div class="container-fluid major-dash-sec">
+        <!-- breadcrumb section start from here -->
+        <div class="row dash-notification">
+          <div class="col-md-11">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="dash-top">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Dashboard
+                      </li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Customize Site
+                      </li>
+                      <li class="breadcrumb-item stat">
+                        <a href="#">About us</a>
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- breadcrumb section ended from here -->
+
+        <!-- settings section start from here -->
+        <div class="row">
+          <div class="col-md-11 setting-sec">
+            <h2>About us</h2>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- settings section ended from here -->
+
+        <!-- hero section start from here -->
+        <div
+          class="row"
+          type="button"
+          value="Show/Hide"
+          onclick="showHideDiv('divMsg', this)"
+        >
+          <div class="col-md-11 visitor-sec info-sect">
+            <div class="row">
+              <div class="col-md-12 visit-sect home-sec">
+                <h2>Hero Section</h2>
+                <div class="icon-sec">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="divMsg">
+          <div class="col-md-11 p-0">
+            <div
+              class="form-section conditions msg-content-sec setting-sect home-inp-sec"
+            >
+              <!-- Upload End -->
+              <div class="row">
+                <div class="col-md-6 identity" id="upload-image">
+                  <label for="">Main Image</label>
+                  <p class="up-img-desc">
+                    Use high-resolution images to ensure clarity and sharpness
+                    on various devices.Align the image with the overall theme
+                    and message of your website.Use formats like JPEG or PNG for
+                    faster loading.
+                  </p>
+                  <div
+                    class="input-file-wrapper transition-linear-3 position-relative"
+                  >
+                    <span
+                      class="remove-img-btn position-absolute"
+                      @click="reset('post-thumbnail')"
+                      v-if="preview!==null"
+                    >
+                      Remove
+                    </span>
+                    <label
+                      class="input-style input-label lh-1-7 p-3 text-center cursor-pointer"
+                      for="post-thumbnail"
+                    >
+                      <span v-show="preview===null">
+                        <i class="fa-solid fa-cloud-arrow-up pt-3"></i>
+                        <span class="d-block">Upload Image</span>
+                        <p>
+                          Click to upload image, or drag & drop files here
+                          (png/jpeg)
+                        </p>
+                      </span>
+                      <template v-if="preview">
+                        <img :src="preview" class="img-fluid mt-2" />
+                      </template>
+                    </label>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      @change="previewImage('post-thumbnail')"
+                      class="input-file"
+                      id="post-thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Upload End -->
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- hero section ended from here -->
+
+        <!-- what we offer section start from here -->
+        <div
+          class="row"
+          type="button"
+          value="Show/Hide"
+          onclick="showHideDiv('divMsg1', this)"
+        >
+          <div class="col-md-11 visitor-sec info-sect">
+            <div class="row">
+              <div class="col-md-12 visit-sect home-sec">
+                <h2>About us</h2>
+                <div class="icon-sec">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="divMsg1">
+          <div class="col-md-11 p-0">
+            <div
+              class="form-section conditions msg-content-sec setting-sect home-inp-sec"
+            >
+              <!-- Upload End -->
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="">About us</label>
+                  <textarea
+                    name=""
+                    class="form-control"
+                    id=""
+                    cols="5"
+                    rows="5"
+                    placeholder="Model Profile Link"
+                  ></textarea>
+                </div>
+              </div>
+              <!-- Upload End -->
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- what we offer section ended from here -->
+
+        <!-- our team section start from here -->
+        <div
+          class="row"
+          type="button"
+          value="Show/Hide"
+          onclick="showHideDiv('divMsg2', this)"
+        >
+          <div class="col-md-11 visitor-sec info-sect">
+            <div class="row">
+              <div class="col-md-12 visit-sect home-sec">
+                <h2>Our Team</h2>
+                <div class="icon-sec">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="divMsg2">
+          <div class="col-md-11 p-0">
+            <div
+              class="form-section conditions msg-content-sec setting-sect home-inp-sec"
+            >
+              <!-- Upload End -->
+              <div class="row">
+                <div class="col-md-6 identity" id="upload-image7">
+                  <label for="">Member Image</label>
+                  <p class="up-img-desc">
+                    Team member Portrait should be clear.
+                  </p>
+                  <div
+                    class="input-file-wrapper transition-linear-3 position-relative"
+                  >
+                    <span
+                      class="remove-img-btn position-absolute"
+                      @click="reset('post-thumbnail')"
+                      v-if="preview!==null"
+                    >
+                      Remove
+                    </span>
+                    <label
+                      class="input-style input-label lh-1-7 p-3 text-center cursor-pointer"
+                      for="post-thumbnail"
+                    >
+                      <span v-show="preview===null">
+                        <i class="fa-solid fa-cloud-arrow-up pt-3"></i>
+                        <span class="d-block">Upload Image</span>
+                        <p>
+                          Click to upload image, or drag & drop files here
+                          (png/jpeg)
+                        </p>
+                      </span>
+                      <template v-if="preview">
+                        <img :src="preview" class="img-fluid mt-2" />
+                      </template>
+                    </label>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      @change="previewImage('post-thumbnail')"
+                      class="input-file"
+                      id="post-thumbnail"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 identity" id="upload-image8">
+                  <label for="">Member Image</label>
+                  <p class="up-img-desc">
+                    Team member Portrait should be clear.
+                  </p>
+                  <div
+                    class="input-file-wrapper transition-linear-3 position-relative"
+                  >
+                    <span
+                      class="remove-img-btn position-absolute"
+                      @click="reset('post-thumbnail')"
+                      v-if="preview!==null"
+                    >
+                      Remove
+                    </span>
+                    <label
+                      class="input-style input-label lh-1-7 p-3 text-center cursor-pointer"
+                      for="post-thumbnail"
+                    >
+                      <span v-show="preview===null">
+                        <i class="fa-solid fa-cloud-arrow-up pt-3"></i>
+                        <span class="d-block">Upload Image</span>
+                        <p>
+                          Click to upload image, or drag & drop files here
+                          (png/jpeg)
+                        </p>
+                      </span>
+                      <template v-if="preview">
+                        <img :src="preview" class="img-fluid mt-2" />
+                      </template>
+                    </label>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      @change="previewImage('post-thumbnail')"
+                      class="input-file"
+                      id="post-thumbnail"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="">Member Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="write something...."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="">Member Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="write something...."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="">Designation</label>
+                  <input
+                    type="text"
+                    class="form-control mb-0"
+                    placeholder="write something...."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="">Designation</label>
+                  <input
+                    type="text"
+                    class="form-control mb-0"
+                    placeholder="write something...."
+                  />
+                </div>
+                <div class="col-md-6 identity" id="upload-image9">
+                  <label for="">Member Image</label>
+                  <p class="up-img-desc">
+                    Team member Portrait should be clear.
+                  </p>
+                  <div
+                    class="input-file-wrapper transition-linear-3 position-relative"
+                  >
+                    <span
+                      class="remove-img-btn position-absolute"
+                      @click="reset('post-thumbnail')"
+                      v-if="preview!==null"
+                    >
+                      Remove
+                    </span>
+                    <label
+                      class="input-style input-label lh-1-7 p-3 text-center cursor-pointer"
+                      for="post-thumbnail"
+                    >
+                      <span v-show="preview===null">
+                        <i class="fa-solid fa-cloud-arrow-up pt-3"></i>
+                        <span class="d-block">Upload Image</span>
+                        <p>
+                          Click to upload image, or drag & drop files here
+                          (png/jpeg)
+                        </p>
+                      </span>
+                      <template v-if="preview">
+                        <img :src="preview" class="img-fluid mt-2" />
+                      </template>
+                    </label>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      @change="previewImage('post-thumbnail')"
+                      class="input-file"
+                      id="post-thumbnail"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 identity" id="upload-image10">
+                  <label for="">Member Image</label>
+                  <p class="up-img-desc">
+                    Team member Portrait should be clear.
+                  </p>
+                  <div
+                    class="input-file-wrapper transition-linear-3 position-relative"
+                  >
+                    <span
+                      class="remove-img-btn position-absolute"
+                      @click="reset('post-thumbnail')"
+                      v-if="preview!==null"
+                    >
+                      Remove
+                    </span>
+                    <label
+                      class="input-style input-label lh-1-7 p-3 text-center cursor-pointer"
+                      for="post-thumbnail"
+                    >
+                      <span v-show="preview===null">
+                        <i class="fa-solid fa-cloud-arrow-up pt-3"></i>
+                        <span class="d-block">Upload Image</span>
+                        <p>
+                          Click to upload image, or drag & drop files here
+                          (png/jpeg)
+                        </p>
+                      </span>
+                      <template v-if="preview">
+                        <img :src="preview" class="img-fluid mt-2" />
+                      </template>
+                    </label>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      @change="previewImage('post-thumbnail')"
+                      class="input-file"
+                      id="post-thumbnail"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="">Member Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="write something...."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="">Member Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="write something...."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="">Designation</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="write something...."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="">Designation</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="write something...."
+                  />
+                </div>
+              </div>
+              <!-- Upload End -->
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- top modals section ended from here -->
+
+        <!-- results section start from here -->
+        <div class="row">
+          <div class="col-md-11">
+            <div class="col-md-12">
+              <div class="modal-btns-sec">
+                <button class="btn reply-btn upd-btn">Cancel</button>
+                <button class="btn read-btn upd-btn">Update</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- growing results section ended from here -->
+      </div>
+      <!-- copyright section start from here -->
+      <div class="copyright">
+        <p>Copyright Dreamcrowd © 2021. All Rights Reserved.</p>
+      </div>
+      <!-- copyright section ended from here -->
+      <!-- =============================== MAIN CONTENT END HERE =========================== -->
+    </section>
+
+    <!-- logout modal -->
+    <div
+      class="modal fade"
+      id="logoutmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content msg-content-sec">
+          <div class="modal-body p-0">
+            <h2>Are you sure you want to logout?</h2>
+            <div class="row">
+              <div class="col-md-12 logout-btns-sec">
+                <div class="modal-btns-sec">
+                  <button
+                    class="btn reply-btn"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No, Cancel
+                  </button>
+                  <button class="btn read-btn">Yes, Sure</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
+<!-- Hide Show Content -->
+<script>
+  function showHideDiv(divId, clickedElement) {
+    var div = document.getElementById(divId);
+    var icon = clickedElement.querySelector(".icon-sec i"); // find the icon inside clicked section
+
+    if (div.style.display === "none" || div.style.display === "") {
+      div.style.display = "flex"; // Bootstrap Row needs flex to show properly
+      if (icon) {
+        icon.classList.remove("fa-chevron-down");
+        icon.classList.add("fa-chevron-up");
+      }
+    } else {
+      div.style.display = "none";
+      if (icon) {
+        icon.classList.remove("fa-chevron-up");
+        icon.classList.add("fa-chevron-down");
+      }
+    }
+  }
+</script>
+<!-- Upload script start -->
+<script>
+  // 1
+  new Vue({
+    el: "#upload-image",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 2
+  new Vue({
+    el: "#upload-image1",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 3
+  new Vue({
+    el: "#upload-image2",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 4
+  new Vue({
+    el: "#upload-image3",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 5
+  new Vue({
+    el: "#upload-image4",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 6
+  new Vue({
+    el: "#upload-image5",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 7
+  new Vue({
+    el: "#upload-image6",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 8
+  new Vue({
+    el: "#upload-image7",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 9
+  new Vue({
+    el: "#upload-image8",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 10
+  new Vue({
+    el: "#upload-image9",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 11
+  new Vue({
+    el: "#upload-image10",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 12
+  new Vue({
+    el: "#upload-image11",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 13
+  new Vue({
+    el: "#upload-image12",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 14
+  new Vue({
+    el: "#upload-image13",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 15
+  new Vue({
+    el: "#upload-image14",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 16
+  new Vue({
+    el: "#upload-image15",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 17
+  new Vue({
+    el: "#upload-image16",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 18
+  new Vue({
+    el: "#upload-image17",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 19
+  new Vue({
+    el: "#upload-image18",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 20
+  new Vue({
+    el: "#upload-image19",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 21
+  new Vue({
+    el: "#upload-image20",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 22
+  new Vue({
+    el: "#upload-image21",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 23
+  new Vue({
+    el: "#upload-image22",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 24
+  new Vue({
+    el: "#upload-image23",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 25
+  new Vue({
+    el: "#upload-image24",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 26
+  new Vue({
+    el: "#upload-image25",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 27
+  new Vue({
+    el: "#upload-image30",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+</script>

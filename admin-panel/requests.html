@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/55bd3bbc70.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <title>Yasuke Agency</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="">
+          <img src="assets/img/Dream-crowd-Logo.png" />
+        </i>
+        <span class="logo_name">DREAMCROWD</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard.html">
+            <i class="bx bx-stats" title="Statistics"></i>
+            <span class="link_name">Statistics</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-user icon'title="Customize Site" ></i>
+                <span class="link_name">Customize Site</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+          <ul class="sub-menu">
+              <li><a class="link_name" href="#">Customize Site</a></li>
+              <li><a href="siteidentity.html">Site Identity</a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+              <li><a href="faqs.html">FAQ’s</a></li>
+              <li><a href="contactus.html">Contact us</a></li>
+              <li><a href="apply-now-form.html">Apply Now Form</a></li>
+              <li><a href="thankyou.html">Thank You</a></li>
+            </ul>
+          </li>
+        <li class="active">
+          <div class="iocn-link">
+            <a href="requests.html">
+              <i class="bx bx-laptop" title="Requests"></i>
+              <span class="link_name">Requests</span>
+            </a>
+          </div>
+        </li>
+        <!-- <li> -->
+        <li>
+          <a href="messages.html">
+            <i class="bx bxs-message-dots" title="Messages"></i>
+            <span class="link_name">Messages</span>
+          </a>
+        </li>
+      </ul>
+      <div class="bottom-links">
+        <ul class="nav-links">
+          <li>
+            <a href="settings.html">
+              <i class="bx bx-cog icon" title="Setting"></i>
+              <span class="link_name">Setting</span>
+            </a>
+          </li>
+          <li data-bs-toggle="modal" data-bs-target="#logoutmodal">
+            <a href="#">
+              <i class="bx bx-log-out icon" title="Logout"></i>
+              <span class="link_name">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="home-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="home-content fixed-top">
+            <div class="col-md-8" style="padding: 0px 12px; display: flex">
+              <i class="bx bx-menu"></i>
+              <i class="nav-dash-logo">
+                <img src="assets/img/logo.png" />
+              </i>
+            </div>
+            <div class="col-md-4" style="padding: 0px 12px">
+              <div class="nav-profile">
+                <i class="bx bx-envelope"></i>
+                <img src="assets/img/profile-img.png" alt="" />
+                <h1>Sebastian</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============================== MAIN CONTENT START HERE =========================== -->
+      <div class="container-fluid major-dash-sec">
+        <!-- breadcrumb section start from here -->
+        <div class="row dash-notification">
+          <div class="col-md-11">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="dash-top">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Dashboard
+                      </li>
+                      <li class="breadcrumb-item stat">
+                        <a href="#">Statistics</a>
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- breadcrumb section ended from here -->
+
+        <!-- visitor section start from here -->
+        <div class="row">
+          <div class="col-md-11 visitor-sec">
+            <div class="row">
+              <div class="col-md-5 visit-sect">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb p-0">
+                    <li class="breadcrumb-item statis">
+                      <a href="#">Statistics</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Visitors
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="col-md-7">
+                <div class="visitor-search-sec">
+                  <div class="search-sec">
+                  <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                  </svg> Delete</p>
+                  </div>
+                  <div class="search-sec">
+                    <select name="" id="">
+                      <option value="Last 30 Day">Last 30 Day</option>
+                      <option value="Last 20 Day">Last 20 Day</option>
+                      <option value="Last 10 Day">Last 10 Day</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- visitor section ended from here -->
+
+        <!-- request table section start from here -->
+        <div class="row">
+          <div class="col-md-11 p-0">
+            <div class="request-table-sec">
+                <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">
+                          <label class="check-sec">
+                            <input type="checkbox" id="selectAll" onclick="this.closest('table').querySelectorAll('.rowCheckbox').forEach(cb=>cb.checked=this.checked)"> 
+                            Name
+                          </label>
+                        </th>
+                        <th scope="col" class="table-head-sec">Email</th>
+                        <th scope="col" class="table-head-sec">Phone</th>
+                        <th scope="col" class="table-gen-sec">Gender</th>
+                        <th scope="col" class="table-gen-sec">Country</th>
+                        <th scope="col" class="table-head-sec">DOB</th>
+                        <th scope="col" class="table-gen-sec">Athencity</th>
+                        <th scope="col" class="table-gen-sec">Athencity</th>
+                        <th scope="col" class="table-social-sec">OnlyFans Account</th>
+                        <th scope="col" class="table-social-sec">Instagram Handle</th>
+                        <th scope="col" class="table-social-sec">Tiktok Handle</th>
+                        <th scope="col" class="table-head-sec">Content Type</th>
+                        <th scope="col" class="table-head-sec">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                      <tr>
+                        <td><label class="check-sec"><input type="checkbox" class="rowCheckbox"> Sebastian</label></td>
+                        <td>example@company.com</td>
+                        <td>+92 301 4686096</td>
+                        <td>Female</td>
+                        <td>United State</td>
+                        <td>June 15,2001</td>
+                        <td>Russian</td>
+                        <td>Russian</td>
+                        <td>https://onlyfans.com/...</td>
+                        <td>https://instagram.com/</td>
+                        <td>https://tiktok.com/...</td>
+                        <td>Adult (18+)</td>
+                        <td><a href="viewapplication.html">View Application</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+                <!-- Pagination -->
+                <nav>
+                    <ul class="pagination pagination-sec">
+                      <li class="page-item"><a class="page-link" href="#">«</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">»</a></li>
+                    </ul>
+                  </nav>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- request table section ended from here -->
+      </div>
+      <!-- =============================== MAIN CONTENT END HERE =========================== -->
+       <!-- copyright section start from here -->
+      <div class="copyright">
+        <p>Copyright Dreamcrowd © 2021. All Rights Reserved.</p>
+      </div>
+      <!-- copyright section ended from here -->
+    </section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script src="assets/js/script.js"></script>   
+
+        <!-- logout modal -->
+        <div
+        class="modal fade"
+        id="logoutmodal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content msg-content-sec">
+            <div class="modal-body p-0">
+              <h2>Are you sure you want to logout?</h2>
+              <div class="row">
+                <div class="col-md-12 logout-btns-sec">
+                  <div class="modal-btns-sec">
+                    <button
+                      class="btn reply-btn"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      No, Cancel
+                    </button>
+                    <button class="btn read-btn">Yes, Sure</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

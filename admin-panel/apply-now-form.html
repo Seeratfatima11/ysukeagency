@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <!-- file upload link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/55bd3bbc70.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <title>Yasuke Agency</title>
+  </head>
+  <style>
+    .button {
+      color: #000 !important;
+    }
+  </style>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="">
+          <img src="assets/img/Dream-crowd-Logo.png" />
+        </i>
+        <span class="logo_name">DREAMCROWD</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard.html">
+            <i class="bx bx-stats" title="Statistics"></i>
+            <span class="link_name">Statistics</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </li>
+        <li class="active showMenu">
+          <div class="iocn-link">
+            <a href="#">
+              <i class="bx bx-cog icon" title="Customize Site"></i>
+              <span class="link_name">Customize Site</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Customize Site</a></li>
+            <li>
+              <a href="siteidentity.html">Site Identity</a>
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="faqs.html">FAQ’s</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li>
+              <a class="button" href="apply-now-form.html">Apply Now Form</a>
+            </li>
+            <li><a href="thankyou.html">Thank You</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="requests.html">
+              <i class="bx bx-laptop" title="Requests"></i>
+              <span class="link_name">Requests</span>
+            </a>
+          </div>
+        </li>
+        <!-- <li> -->
+        <li>
+          <a href="messages.html">
+            <i class="bx bxs-message-dots" title="Messages"></i>
+            <span class="link_name">Messages</span>
+          </a>
+        </li>
+      </ul>
+      <div class="bottom-links">
+        <ul class="nav-links">
+          <li>
+            <a href="settings.html">
+              <i class="bx bx-cog icon" title="Setting"></i>
+              <span class="link_name">Setting</span>
+            </a>
+          </li>
+          <li data-bs-toggle="modal" data-bs-target="#logoutmodal">
+            <a href="#">
+              <i class="bx bx-log-out icon" title="Logout"></i>
+              <span class="link_name">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="home-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="home-content fixed-top">
+            <div class="col-md-8" style="padding: 0px 12px; display: flex">
+              <i class="bx bx-menu"></i>
+              <i class="nav-dash-logo">
+                <img src="assets/img/logo.png" />
+              </i>
+            </div>
+            <div class="col-md-4" style="padding: 0px 12px">
+              <div class="nav-profile">
+                <i class="bx bx-envelope"></i>
+                <img src="assets/img/profile-img.png" alt="" />
+                <h1>Sebastian</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============================== MAIN CONTENT START HERE =========================== -->
+      <div class="container-fluid major-dash-sec">
+        <!-- breadcrumb section start from here -->
+        <div class="row dash-notification">
+          <div class="col-md-11">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="dash-top">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Dashboard
+                      </li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Customize Site
+                      </li>
+                      <li class="breadcrumb-item stat">
+                        <a href="#">Apply Now Form</a>
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- breadcrumb section ended from here -->
+
+        <!-- settings section start from here -->
+        <div class="row">
+          <div class="col-md-11 setting-sec">
+            <h2>Apply Now Form</h2>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- settings section ended from here -->
+
+        <!-- hero section start from here -->
+        <div
+          class="row"
+          type="button"
+          value="Show/Hide"
+          onclick="showHideDiv('divMsg', this)"
+        >
+          <div class="col-md-11 visitor-sec info-sect">
+            <div class="row">
+              <div class="col-md-12 visit-sect home-sec">
+                <h2>Hero Section</h2>
+                <div class="icon-sec">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="divMsg">
+          <div class="col-md-11 p-0">
+            <div
+              class="form-section conditions msg-content-sec setting-sect home-inp-sec"
+            >
+              <!-- Upload End -->
+              <div class="row">
+                <div class="col-md-6 identity" id="upload-image">
+                  <label for="">Main Image</label>
+                  <p class="up-img-desc">
+                    Use high-resolution images to ensure clarity and sharpness
+                    on various devices.Align the image with the overall theme
+                    and message of your website.Use formats like JPEG or PNG for
+                    faster loading.
+                  </p>
+                  <div
+                    class="input-file-wrapper transition-linear-3 position-relative"
+                  >
+                    <span
+                      class="remove-img-btn position-absolute"
+                      @click="reset('post-thumbnail')"
+                      v-if="preview!==null"
+                    >
+                      Remove
+                    </span>
+                    <label
+                      class="input-style input-label lh-1-7 p-3 text-center cursor-pointer"
+                      for="post-thumbnail"
+                    >
+                      <span v-show="preview===null">
+                        <i class="fa-solid fa-cloud-arrow-up pt-3"></i>
+                        <span class="d-block">Upload Image</span>
+                        <p>
+                          Click to upload image, or drag & drop files here
+                          (png/jpeg)
+                        </p>
+                      </span>
+                      <template v-if="preview">
+                        <img :src="preview" class="img-fluid mt-2" />
+                      </template>
+                    </label>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      @change="previewImage('post-thumbnail')"
+                      class="input-file"
+                      id="post-thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Upload End -->
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- hero section ended from here -->
+
+        <!-- hero section start from here -->
+        <div
+          class="row"
+          type="button"
+          value="Show/Hide"
+          onclick="showHideDiv('divMsg1', this)"
+        >
+          <div class="col-md-11 visitor-sec info-sect">
+            <div class="row">
+              <div class="col-md-12 visit-sect home-sec">
+                <h2>Receive Your Offer Detail</h2>
+                <div class="icon-sec">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="divMsg1">
+          <div class="col-md-11 p-0">
+            <div
+              class="form-section conditions msg-content-sec setting-sect home-inp-sec"
+            >
+              <!-- Upload End -->
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="">Description</label>
+                  <textarea
+                    name=""
+                    class="form-control"
+                    id=""
+                    cols="3"
+                    rows="3"
+                    placeholder="Model Profile Link"
+                  ></textarea>
+                </div>
+              </div>
+              <!-- Upload End -->
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- hero section ended from here -->
+
+        <!-- top modals section start from here -->
+        <div
+          class="row"
+          type="button"
+          value="Show/Hide"
+          onclick="showHideDiv('divMsg2', this)"
+        >
+          <div class="col-md-11 visitor-sec info-sect">
+            <div class="row">
+              <div class="col-md-12 visit-sect home-sec">
+                <h2>Personal Information</h2>
+                <div class="icon-sec">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="divMsg2">
+          <div class="col-md-11 p-0">
+            <div
+              class="form-section conditions msg-content-sec setting-sect home-inp-sec"
+            >
+              <!-- Upload End -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >First Name <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. first name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Last Name <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. last name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for="">Email <span class="sterik">*</span> </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="eg. example@company.com"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Phone Number <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. +92 301 4686094"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Date of Birth <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="dd/mm/yyyy"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for="">Gender <span class="sterik">*</span> </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. female"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Country of Residence <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. Romania"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for="">City <span class="sterik">*</span> </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. Bucharest"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Athencity <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. hungarian"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Language <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. romanian"
+                  />
+                </div>
+                <div class="col-md-6 identity" id="upload-image1">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Upload Image <span class="sterik">*</span>
+                    </label>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    >
+                      <path
+                        d="M12 17.333H18"
+                        stroke="#FE5FA1"
+                        stroke-opacity="0.99"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.4619 6.43547C15.7407 6.15664 16.1189 6 16.5132 6C16.7085 6 16.9018 6.03846 17.0822 6.11318C17.2626 6.18789 17.4265 6.29741 17.5645 6.43547C17.7026 6.57353 17.8121 6.73744 17.8868 6.91782C17.9615 7.09821 18 7.29154 18 7.48679C18 7.68204 17.9615 7.87538 17.8868 8.05576C17.8121 8.23615 17.7026 8.40005 17.5645 8.53811L8.80352 17.2991L6 18L6.70088 15.1965L15.4619 6.43547Z"
+                        stroke="#FE5FA1"
+                        stroke-opacity="0.99"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="input-file-wrapper transition-linear-3 position-relative"
+                  >
+                    <span
+                      class="remove-img-btn position-absolute"
+                      @click="reset('post-thumbnail')"
+                      v-if="preview!==null"
+                    >
+                      Remove
+                    </span>
+                    <label
+                      class="input-style input-label lh-1-7 p-3 text-center cursor-pointer"
+                      for="post-thumbnail"
+                    >
+                      <span v-show="preview===null">
+                        <i class="fa-solid fa-cloud-arrow-up pt-3"></i>
+                        <span class="d-block">Upload Image</span>
+                        <p>
+                          Click to upload image, or drag & drop files here
+                          (png/jpeg)
+                        </p>
+                      </span>
+                      <template v-if="preview">
+                        <img :src="preview" class="img-fluid mt-2" />
+                      </template>
+                    </label>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      @change="previewImage('post-thumbnail')"
+                      class="input-file"
+                      id="post-thumbnail"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="modal-btns-sec">
+                    <button class="btn read-btn upd-btn">Add New Input</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Upload End -->
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- top modals section ended from here -->
+
+        <!-- social media section start from here -->
+        <div
+          class="row"
+          type="button"
+          value="Show/Hide"
+          onclick="showHideDiv('divMsg3', this)"
+        >
+          <div class="col-md-11 visitor-sec info-sect">
+            <div class="row">
+              <div class="col-md-12 visit-sect home-sec">
+                <h2>Social Media Information</h2>
+                <div class="icon-sec">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row" id="divMsg3">
+          <div class="col-md-11 p-0">
+            <div
+              class="form-section conditions msg-content-sec setting-sect home-inp-sec"
+            >
+              <!-- Upload End -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >What is your realistic monthly take-home income goal
+                      <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. first name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Your Onlyfans Link <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. last name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Onlyfans Account - # of Paid Fans
+                      <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. example@company.com"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Onlyfans Account - Free Fans
+                      <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. +92 301 4686094"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >How do you currently grow your fan base on Onlyfans?
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. female"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Instagram Handle <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. female"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >TikTok Handle <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. Romania"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for="">Have you worked with an Agency before?</label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. Bucharest"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Content Types <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. hungarian"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Referral <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="eg. romanian"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Your Message <span class="sterik">*</span>
+                    </label>
+                    <img
+                      src="assets/img/edit.svg"
+                      alt=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    />
+                  </div>
+                  <textarea
+                    name=""
+                    id=""
+                    rows="5"
+                    cols="5"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <div class="col-md-6 identity" id="upload-image2">
+                  <div class="personal-info-sec">
+                    <label for=""
+                      >Upload Image <span class="sterik">*</span>
+                    </label>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editprofilemodal"
+                    >
+                      <path
+                        d="M12 17.333H18"
+                        stroke="#FE5FA1"
+                        stroke-opacity="0.99"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.4619 6.43547C15.7407 6.15664 16.1189 6 16.5132 6C16.7085 6 16.9018 6.03846 17.0822 6.11318C17.2626 6.18789 17.4265 6.29741 17.5645 6.43547C17.7026 6.57353 17.8121 6.73744 17.8868 6.91782C17.9615 7.09821 18 7.29154 18 7.48679C18 7.68204 17.9615 7.87538 17.8868 8.05576C17.8121 8.23615 17.7026 8.40005 17.5645 8.53811L8.80352 17.2991L6 18L6.70088 15.1965L15.4619 6.43547Z"
+                        stroke="#FE5FA1"
+                        stroke-opacity="0.99"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="input-file-wrapper transition-linear-3 position-relative"
+                  >
+                    <span
+                      class="remove-img-btn position-absolute"
+                      @click="reset('post-thumbnail')"
+                      v-if="preview!==null"
+                    >
+                      Remove
+                    </span>
+                    <label
+                      class="input-style input-label lh-1-7 p-3 text-center cursor-pointer"
+                      for="post-thumbnail"
+                    >
+                      <span v-show="preview===null">
+                        <i class="fa-solid fa-cloud-arrow-up pt-3"></i>
+                        <span class="d-block">Upload Image</span>
+                        <p>
+                          Click to upload image, or drag & drop files here
+                          (png/jpeg)
+                        </p>
+                      </span>
+                      <template v-if="preview">
+                        <img :src="preview" class="img-fluid mt-2" />
+                      </template>
+                    </label>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      @change="previewImage('post-thumbnail')"
+                      class="input-file"
+                      id="post-thumbnail"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="modal-btns-sec">
+                    <button class="btn read-btn upd-btn">Add New Input</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Upload End -->
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <!-- social media section ended from here -->
+      </div>
+      <!-- copyright section start from here -->
+      <div class="copyright">
+        <p>Copyright Dreamcrowd © 2021. All Rights Reserved.</p>
+      </div>
+      <!-- copyright section ended from here -->
+      <!-- =============================== MAIN CONTENT END HERE =========================== -->
+    </section>
+    <!-- View Message Modal -->
+    <div
+      class="modal fade"
+      id="editprofilemodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content msg-content-sec">
+          <div class="modal-body p-0">
+            <div class="form-group form-group-sec">
+              <label>Input</label>
+              <div class="radio-group radio-group-sec">
+                <label
+                  ><input type="radio" name="inputType" value="text" checked />
+                  Text</label
+                >
+                <label
+                  ><input type="radio" name="inputType" value="upload" /> Upload
+                  file</label
+                >
+              </div>
+            </div>
+
+            <div class="form-group form-group-sec">
+              <label>Type</label>
+              <div class="radio-group radio-group-sec">
+                <label
+                  ><input
+                    type="radio"
+                    name="fieldType"
+                    value="compulsory"
+                    checked
+                  />
+                  Compulsory</label
+                >
+                <label
+                  ><input type="radio" name="fieldType" value="optional" />
+                  Optional</label
+                >
+              </div>
+            </div>
+
+            <div class="form-group form-group-sec">
+              <label>Title</label>
+              <input
+                type="text"
+                class="input-text input-text-sec"
+                placeholder="Gender"
+              />
+            </div>
+
+            <div id="placeholderSection" class="form-group form-group-sec">
+              <label>Placeholder</label>
+              <select class="form-control select-placeholder">
+                <option disabled selected>- Select Option -</option>
+              </select>
+            </div>
+
+            <div id="optionsSection" class="form-group form-group-sec">
+              <label>Does input have options?</label>
+              <div class="radio-group radio-group-sec">
+                <label
+                  ><input type="radio" name="hasOptions" value="yes" />
+                  Yes</label
+                >
+                <label
+                  ><input type="radio" name="hasOptions" value="no" checked />
+                  No</label
+                >
+              </div>
+            </div>
+            <div
+              id="writeOptionsSection"
+              class="form-group form-group-sec"
+              style="display: none"
+            >
+              <label>Write Options</label>
+
+              <!-- Option Badges -->
+              <div class="options-list-sec" id="options-list">
+                <!-- Dynamic items will appear here -->
+              </div>
+
+              <!-- Input Row -->
+              <div class="option-input-wrapper">
+                <input
+                  type="text"
+                  class="input-text input-text-sec"
+                  placeholder="Enter option"
+                  id="option-input"
+                />
+              </div>
+
+              <!-- Add More Button Row -->
+              <div class="add-option-btn-wrapper">
+                <button class="btn add-option-btn" id="add-option">
+                  Add More
+                </button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="modal-btns-sec">
+                  <button class="btn read-btn upd-btn">Update</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- logout modal -->
+    <div
+      class="modal fade"
+      id="logoutmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content msg-content-sec">
+          <div class="modal-body p-0">
+            <h2>Are you sure you want to logout?</h2>
+            <div class="row">
+              <div class="col-md-12 logout-btns-sec">
+                <div class="modal-btns-sec">
+                  <button
+                    class="btn reply-btn"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No, Cancel
+                  </button>
+                  <button class="btn read-btn">Yes, Sure</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
+<!-- edit profile js -->
+<script>
+  $(function () {
+    function toggleSections() {
+      const inputType = $('input[name="inputType"]:checked').val();
+      const hasOptions = $('input[name="hasOptions"]:checked').val();
+
+      if (inputType === "upload") {
+        $("#placeholderSection, #optionsSection, #writeOptionsSection").hide();
+      } else {
+        $("#placeholderSection, #optionsSection").show();
+        $("#writeOptionsSection").toggle(hasOptions === "yes");
+      }
+    }
+
+    // Initial toggle on load
+    toggleSections();
+
+    $('input[name="inputType"]').on("change", toggleSections);
+    $('input[name="hasOptions"]').on("change", toggleSections);
+
+    $("#add-option").on("click", function (e) {
+      e.preventDefault();
+      const val = $("#option-input").val().trim();
+      if (val) {
+        const badge = `
+            <div class="option-badge">
+              <span class="remove-option" data-val="${val}">✕</span>
+              ${val}
+            </div>
+          `;
+        $("#options-list").append(badge);
+        $("#option-input").val("");
+      }
+    });
+
+    $("#options-list").on("click", ".remove-option", function () {
+      $(this).parent(".option-badge").remove();
+    });
+  });
+</script>
+
+<!-- Hide Show Content -->
+<script>
+  function showHideDiv(divId, clickedElement) {
+    var div = document.getElementById(divId);
+    var icon = clickedElement.querySelector(".icon-sec i"); // find the icon inside clicked section
+
+    if (div.style.display === "none" || div.style.display === "") {
+      div.style.display = "flex"; // Bootstrap Row needs flex to show properly
+      if (icon) {
+        icon.classList.remove("fa-chevron-down");
+        icon.classList.add("fa-chevron-up");
+      }
+    } else {
+      div.style.display = "none";
+      if (icon) {
+        icon.classList.remove("fa-chevron-up");
+        icon.classList.add("fa-chevron-down");
+      }
+    }
+  }
+</script>
+<!-- Upload script start -->
+<script>
+  // 1
+  new Vue({
+    el: "#upload-image",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 2
+  new Vue({
+    el: "#upload-image1",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+  // 3
+  new Vue({
+    el: "#upload-image2",
+    data() {
+      return {
+        preview: null,
+        image: null,
+      };
+    },
+    methods: {
+      previewImage: function (id) {
+        let input = document.getElementById(id);
+        if (input.files) {
+          let reader = new FileReader();
+          reader.onload = (e) => {
+            this.preview = e.target.result;
+          };
+          this.image = input.files[0];
+          reader.readAsDataURL(input.files[0]);
+        }
+      },
+      reset: function (id) {
+        this.image = null;
+        this.preview = null;
+        // Clear the input element
+        document.getElementById(id).value = "";
+      },
+    },
+  });
+</script>

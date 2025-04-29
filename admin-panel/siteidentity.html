@@ -239,14 +239,14 @@
                   >
                     <span
                       class="remove-img-btn position-absolute"
-                      @click="reset('post-thumbnail')"
+                      @click="reset('post-thumbnail1')"
                       v-if="preview!==null"
                     >
                       Remove
                     </span>
                     <label
                       class="input-style input-label lh-1-7 p-3 text-center cursor-pointer"
-                      for="post-thumbnail"
+                      for="post-thumbnail1"
                     >
                       <span v-show="preview===null">
                         <i class="fa-solid fa-cloud-arrow-up pt-3"></i>
@@ -263,9 +263,9 @@
                     <input
                       type="file"
                       accept="image/*"
-                      @change="previewImage('post-thumbnail')"
+                      @change="previewImage('post-thumbnail1')"
                       class="input-file"
-                      id="post-thumbnail"
+                      id="post-thumbnail1"
                     />
                   </div>
                 </div>

@@ -195,7 +195,7 @@ option {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   margin-bottom: 0px;
   padding-bottom: 16px;
 }
@@ -205,7 +205,7 @@ option {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 60px; /* 187.5% */
+  line-height: 60px;
   margin-bottom: 0px;
 }
 .total-section h3 span {
@@ -248,7 +248,7 @@ option {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 .legend-subtext {
   color: rgba(5, 2, 29, 0.2);
@@ -275,7 +275,7 @@ option {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 .request-table-sec td {
   color: rgba(5, 2, 29, 0.32);
@@ -283,7 +283,7 @@ option {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 .request-table-sec td a {
   color: rgba(5, 2, 29, 0.7);
@@ -291,7 +291,7 @@ option {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: none;
@@ -350,7 +350,7 @@ option {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px; /* 125% */
+  line-height: 20px;
   margin-bottom: 0px;
   padding-bottom: 16px;
 }
@@ -366,7 +366,7 @@ option {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
   margin-bottom: 0px;
 }
 .profile-info-det p {
@@ -376,7 +376,7 @@ option {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
   margin-bottom: 0px;
 }
 .profile-btns {
@@ -391,7 +391,7 @@ option {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   width: 100%;
 }
 .profile-btns .reject-btn:hover {
@@ -408,7 +408,7 @@ option {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   width: 100%;
 }
 .profile-info .bord-sec {
@@ -421,7 +421,7 @@ option {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: -0.16px;
   padding-bottom: 8px;
 }
@@ -447,7 +447,7 @@ option {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 .profile-info img {
   width: 100%;
@@ -467,7 +467,7 @@ option {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 36px; /* 180% */
+  line-height: 36px;
   margin-bottom: 0px;
 }
 .msg-content-sec {
@@ -483,7 +483,7 @@ option {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
   padding-bottom: 4px;
   margin-bottom: 0px;
 }
@@ -500,7 +500,7 @@ option {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
 }
 .msg-content-sec textarea {
   border-radius: 8px;
@@ -515,7 +515,7 @@ option {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
 }
 .modal-btns-sec {
   display: flex;
@@ -533,7 +533,7 @@ option {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 .modal-btns-sec .reply-btn {
   border: 1px solid #fe5fa1;
@@ -560,7 +560,7 @@ option {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 36px; /* 180% */
+  line-height: 36px;
   margin-bottom: 0px;
 }
 .info-sect {
@@ -571,7 +571,6 @@ option {
   box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.04);
 }
 /* upload image css */
-/* upload image start */
 .input-style {
   width: 100%;
   border-radius: 8px;
@@ -645,7 +644,7 @@ option {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
   margin-bottom: 0px;
   padding-bottom: 4px;
 }
@@ -655,7 +654,7 @@ option {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
   padding-bottom: 4px;
 }
 .identity p {
@@ -664,7 +663,7 @@ option {
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
   margin-bottom: 0px;
 }
 label.input-style.input-label.lh-1-7.p-3.text-center.cursor-pointer {
@@ -695,7 +694,7 @@ label.input-style.input-label.lh-1-7.p-3.text-center.cursor-pointer {
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 40px; /* 166.667% */
+  line-height: 40px;
   margin-bottom: 0px;
 }
 .logout-btns-sec {
@@ -762,7 +761,7 @@ label.input-style.input-label.lh-1-7.p-3.text-center.cursor-pointer {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
   margin-bottom: 0px;
 }
 .setting-sect .sterik {
@@ -790,7 +789,7 @@ label.input-style.input-label.lh-1-7.p-3.text-center.cursor-pointer {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: -0.16px;
 }
 /* edit profile css */
@@ -805,7 +804,7 @@ label.input-style.input-label.lh-1-7.p-3.text-center.cursor-pointer {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 200% */
+  line-height: 24px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -830,12 +829,11 @@ label.input-style.input-label.lh-1-7.p-3.text-center.cursor-pointer {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 .add-option-btn:hover {
   color: #fff;
 }
-/*  */
 .form-group-sec label {
   padding-bottom: 6px;
   display: block;
